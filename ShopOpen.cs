@@ -6,8 +6,8 @@ public class ShopOpen : MonoBehaviour
 {
 
     public GameObject Shop;
-    public GameObject Bones;
-    public GameObject OldButton;
+    public GameObject GemCount;
+    public GameObject MainMenu;
 
 
     public void OpenShop()
@@ -17,19 +17,18 @@ public class ShopOpen : MonoBehaviour
             Shop.SetActive(true);
         }
     }
-
-    public void CloseBones()
+    public void OpenGemCount()
     {
-        if (Bones != null)
+        if (GemCount != null)
         {
-            Bones.SetActive(false);
+            GemCount.SetActive(true);
         }
     }
-    public void CloseOldButton()
+    public void CloseMainMenu()
     {
-        if (OldButton != null)
+        if (MainMenu != null)
         {
-            OldButton.SetActive(false);
+            MainMenu.SetActive(false);
         }
     }
 }

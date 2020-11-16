@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Back : MonoBehaviour
 {
+
     public GameObject Shop;
-    public GameObject Bones;
-    public GameObject OldButton;
+    public GameObject GemCount;
+    public GameObject MainMenu;
 
 
     public void CloseShop()
@@ -16,19 +16,18 @@ public class Back : MonoBehaviour
             Shop.SetActive(false);
         }
     }
-
-    public void OpenBones()
+    public void CloseGemCount()
     {
-        if (Bones != null)
+        if (GemCount != null)
         {
-            Bones.SetActive(true);
+            GemCount.SetActive(false);
         }
     }
-    public void OpenOldButton()
+    public void OpenMainMenu()
     {
-        if (OldButton != null)
+        if (MainMenu != null)
         {
-            OldButton.SetActive(true);
+            MainMenu.SetActive(true);
         }
     }
 }

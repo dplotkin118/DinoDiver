@@ -7,7 +7,10 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
 
-
+    void Start()
+    {
+        Time.timeScale = 0f;
+    }
 
     void Update()
     {
@@ -28,4 +31,5 @@ public class PlayerControl : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
 }
