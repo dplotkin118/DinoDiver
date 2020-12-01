@@ -6,8 +6,8 @@ using UnityEngine;
 public class CameraSwitch : MonoBehaviour
 {
 
-    public GameObject NormalCam;
-    public GameObject BossCam;
+    public Camera NormalCam;
+    public Camera BossCam;
    
 
     public void OnTriggerEnter2D(Collider2D collider)
@@ -16,8 +16,8 @@ public class CameraSwitch : MonoBehaviour
 
         if (hitObj.tag == "Player")
         {
-            NormalCam.SetActive(false);
-            BossCam.SetActive(true);
+            NormalCam.enabled = false;
+            BossCam.enabled = true;
         }
     }
 }
