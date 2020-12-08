@@ -27,7 +27,7 @@ public class MeleeAttack : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("gottem")
+            Debug.Log("gottem");
         }
 
         void OnDrawGizmosSelected()
